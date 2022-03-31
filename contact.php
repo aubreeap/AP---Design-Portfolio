@@ -29,7 +29,7 @@ if(trim($name) == '') {
 
 	exit('<div class="error_message">You have entered an invalid e-mail address.</div>');
 
-} else if(trim($comments) == 'Tell us what you think!') {
+} else if(trim($comments) == 'Comment') {
 
 	exit('<div class="error_message">Please enter your message.</div>');
 
@@ -49,7 +49,7 @@ if(trim($name) == '') {
 
 
 
-$address = 'hello@email.com';
+$address = 'aubree.a.p@gmail.com';
 
 
 
@@ -79,4 +79,4 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . "\r\n";
 
 
 
-if(mail($address, $e_subject, $msg, $headers)) { echo "<fieldset><div id='success_page'><p>Thank you $name, your message has been submitted to us.</p></div></fieldset>"; }
+if(mail($address, $e_subject, $msg, $headers)) { echo "<fieldset><div id='success_page'><p>Thank you $name, your message has been submitted to me.</p></div></fieldset>"; }
